@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800;900&display=swap');
+:root {
+    --brand-green:#02A75A;
+}
+* {
+    font-family:'Roboto', sans-serif;
+    font-weight:450;
+    font-size:16px;
+    line-height:22px;
+    color:rgba(5, 5, 5, 0.7);
+}
+hr {
+    border-color:#BDBDBD;
+    filter:opacity(0.55);
+}
+h3 {
+    font-weight:700;
+    font-size:calc((32px / 1440px) * 100vw);
+    line-height:calc((40px / 1440px) * 100vw);
+}
+form {
+    min-width:100%;
+    max-width:640px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    padding:26px 43px 43px 43px;
+    border-radius:2px;
+}
+label {
+    margin-bottom:8px;
+}
+.required::after {
+    content:'*';
+    color:red;
+}
+input, select {
+    width:100%;
+    padding:19px 26px;
+    color:rgba(5, 5, 5, 0.35);
+    background-color:rgba(2, 167, 90, 0.03);
+    border:1px solid #E0E0E0;
+    border-radius:2px;
+}
+input[type="button"] {
+    color:var(--brand-green);
+    background-color:rgba(2, 167, 90, 0.15);
+    width:fit-content;
+    padding:18px 32px;
+    border-width:0;
+}
+input[type="submit"], input[value="Next"], input[value="Submit"], button {
+    color:white;
+    background-color:var(--brand-green);
+    width:fit-content;
+    padding:18px 32px;
+    border-width:0;
+}
+input[type="radio"] {
+    width:fit-content;
+}
+input[type="radio"] + label {
+    color:#050505;
+}
+a:any-link {
+    text-decoration:none;
+}
+
+
+/* Style the radio (both checked and unchecked) */
+input[type='radio']:after {
+    width:15px;
+    height:15px;
+    border-radius:15px;
+    top:-2px;
+    left:-1px;
+    position:relative;
+    background-color:#FFF;
+    content:'';
+    display:inline-block;
+    visibility:visible;
+    border:2px solid #050505;
+}
+input[type='radio']:checked:after {
+    width:17px;
+    height:17px;
+    border-radius:15px;
+    top:-2px;
+    left:-2px;
+    position:relative;
+    background-image:url("../images/green-selected-radio.svg");
+    background-color:#FFF;
+    background-size:cover;
+    content:'';
+    display:inline-block;
+    visibility:visible;
+    border-width:0;
+}
+
+
+input[type="file"] {
+    border-style:dashed;
+    padding:28px;
+    background-color:rgba(2, 167, 90, 0.1);
+}
+
+
+.bg-image {
+    position:relative;
+    width:100%;
+    height:100vh;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+}
+.mask {
+    position:absolute;
+    width:100%;
+    height:100%;
+    margin:0 -12px;
+}
+
+/* Stepper design */

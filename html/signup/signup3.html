@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IESG</title>
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 align-self-center">
+                    <a href="./signup1.html"><img src="../../images/IESG-logo.svg" alt="IESG Logo" width=148 height=148 class="float-start"></a>
+                    <!-- Stepper goes here -->
+                    <div class="row">
+                        <div class="col-auto align-self-end">
+                            <ul class="stepper stepper-horizontal" style="max-width:400px">
+                                <li class="done">
+                                    <a href="#!">
+                                        <span class="circle">1</span>
+                                        <span class="label">First step</span>
+                                    </a>
+                                </li>
+                            <li class="done">
+                                <a href="#!">
+                                    <span class="circle">2</span>
+                                    <span class="label">Second step</span>
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="#!">
+                                    <span class="circle">3</span>
+                                    <span class="label">Third step</span>
+                                </a>
+                            </li>
+                            <li class="undone">
+                                <a href="#!">
+                                    <span class="circle">4</i></span>
+                                    <span class="label">Fouth step</span>
+                                </a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-auto align-self-center">
+                    <h3 class="text-center mt-4 mb-4">IESG Membership Form</h3>
+                    <form action="" method="post" class="mb-5">
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <label for="cv" class="required file">Please upload your CV</label>
+                                <input type="file" name="cv" id="cv" accept=".PDF, .Doc, .Docx" required>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <label for="id-card" class="required file">Please upload your ID</label>
+                                <input type="file" name="id-card" id="id-card" accept=".PDF, .PNG, .Jpeg" required>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <label for="passport" class="required file">Please upload your Passport</label>
+                                <input type="file" name="passport" id="passport" accept=".PDF, .PNG, .Jpeg" required>
+                            </div>
+                        </div>
+                        <div class="row justify-content-between">
+                            <div class="col-12">
+                                <a href="./signup2.html"><input type="button" value="Back"></a>
+                                <a href="./signup4.html"><input type="button" value="Next" class="float-end"></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
