@@ -101,22 +101,3 @@ input[type="file"] {
     padding:28px;
     background-color:rgba(2, 167, 90, 0.1);
 }
-
-
-.bg-image {
-    position:relative;
-    width:100%;
-    height:100vh;
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-    background-position:center;
-}
-.mask {
-    position:absolute;
-    width:100%;
-    height:100%;
-    margin:0 -12px;
-}
-
-/* Stepper design */
