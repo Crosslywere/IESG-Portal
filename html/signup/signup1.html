@@ -7,6 +7,7 @@
     <title>IESG</title>
     <link rel="stylesheet" href="../../css/bootstrap.css">
     <link rel="stylesheet" href="../../css/signup.css">
+    <link rel="stylesheet" href="../../css/custom-select.css">
 </head>
 <body>
     <main>
@@ -14,50 +15,117 @@
             <div class="row justify-content-center">
                 <div class="col-lg-auto align-self-center">
                     <h3 class="text-center mt-4 mb-4">IESG Membership Form</h3>
-                    <form action="" method="post" class="mb-5">
+                    <form action="" method="post" class="mb-5" name="member-form" onsubmit="return validateBirthdate()">
                         <div class="row mb-4">
-                            <div class="col-md-6">
+                            <div class="col-md-6 mb-4">
                                 <label for="fname" class="required">First name</label>
                                 <br>
                                 <input type="text" name="fname" id="fname" required>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 mb-4">
                                 <label for="lname" class="required">Last name</label>
                                 <br>
                                 <input type="text" name="lname" id="lname" required>
                             </div>
                         </div>
                         <div class="row mb-4">
-                            <div class="col-12">
+                            <div class="col-12 mb-4">
                                 <label for="phone" class="required">Phone Number</label>
                                 <br>
                                 <input type="tel" name="phone" id="phone" required>
                             </div>
                         </div>
                         <div class="row mb-4">
-                            <div class="col-12">
-                                <label for="birth-date" class="required">Date of Birth</label>
+                            <div class="col-12 mb-4">
+                                <label class="required">Date of Birth</label>
                                 <br>
-                                <input type="date" name="birth-date" id="birth-date" required>
+                                <div class="row">
+                                    <div class="col-6 col-sm-4 mb-3 custom-select">
+                                        <select name="birth-day" id="birth-day" required>
+                                            <option value="null" hidden>Day</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                            <option value="31">31</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6 col-sm-4 mb-3 custom-select">
+                                        <select name="birth-month" id="birth-month" aria-placeholder="Month"  required>
+                                            <option value="null" hidden>Month</option>
+                                            <option value="JAN">January</option>
+                                            <option value="FEB">Febuary</option>
+                                            <option value="MAR">March</option>
+                                            <option value="APR">April</option>
+                                            <option value="MAY">May</option>
+                                            <option value="JUN">June</option>
+                                            <option value="JUL">July</option>
+                                            <option value="AUG">August</option>
+                                            <option value="SEP">September</option>
+                                            <option value="OCT">October</option>
+                                            <option value="NOV">November</option>
+                                            <option value="DEC">December</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-4 mb-3 custom-select">
+                                        <select name="birth-year" id="birth-year" required>
+                                            <option value="null" hidden>Year</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="row mb-4">
                             <div class="col-12">
-                                <p class="required">Highest Educational Qualification</p>
-                                <input type="radio" name="education" id="bachelor" value="bachelor" required>
-                                <label for="bachelor" class="mb-3">Bachelor's Degree</label>
+                                <p class="required" style="margin-bottom:20px">Highest Educational Qualification</p>
+                                <input type="radio" name="education" id="bachelor" value="bachelor" required style="margin-right:10px">
+                                <label for="bachelor" style="margin-bottom:22px">Bachelor's Degree</label>
                                 <br>
-                                <input type="radio" name="education" id="masters" value="masters" required>
-                                <label for="masters" class="mb-3">Masters Degree</label>
+                                <input type="radio" name="education" id="masters" value="masters" required style="margin-right:10px">
+                                <label for="masters" style="margin-bottom:22px">Masters Degree</label>
                                 <br>
-                                <input type="radio" name="education" id="other" value="other" required>
-                                <label for="other" class="mb-3">Other</label>
+                                <input type="radio" name="education" id="other" value="other" required style="margin-right:10px">
+                                <label for="other" style="margin-bottom:22px">Other</label>
                             </div>
                         </div>
                         <div class="row mb-4">
                             <div class="col-12">
-                                <label for="title">Professional Title</label>
-                                <input type="text" name="title" id="title">
+                                <label for="emp-type">Employment Type</label>
+                                <div class="custom-select">
+                                    <select name="emp-type" id="emp-type">
+                                        <option value="null" hidden>&nbsp;</option>
+                                        <option value="business">Business Man</option>
+                                        <option value="employee">Employee</option>
+                                        <option value="public-servant">Public Servant</option>
+                                        <option value="retired">Retired</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                         <div class="row mb-4">
@@ -67,7 +135,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-12 mt-4">
                                 <a href="./signup2.html"><input type="button" value="Next" class="float-end"></a>
                             </div>
                         </div>
@@ -76,5 +144,8 @@
             </div>
         </div>
     </main>
+    <script src="../../js/calender.js"></script>
+    <script src="../../js/custom-select.js"></script>
+    <script src="../../js/validate-dates.js"></script>
 </body>
 </html>

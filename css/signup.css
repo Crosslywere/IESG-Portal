@@ -6,7 +6,7 @@
     font-family:'Roboto', sans-serif;
     font-weight:450;
     font-size:16px;
-    line-height:22px;
+    line-height:20px;
     color:rgba(5, 5, 5, 0.7);
 }
 hr {
@@ -15,13 +15,12 @@ hr {
 }
 h3 {
     font-weight:700;
-    font-size:calc((32px / 1440px) * 100vw);
-    line-height:calc((40px / 1440px) * 100vw);
+    font-size:24px;
+    line-height:30px;
 }
 form {
     min-width:100%;
     max-width:640px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     padding:26px 43px 43px 43px;
     border-radius:2px;
 }
@@ -34,7 +33,7 @@ label {
 }
 input, select {
     width:100%;
-    padding:19px 26px;
+    padding:19px 28px;
     color:rgba(5, 5, 5, 0.35);
     background-color:rgba(2, 167, 90, 0.03);
     border:1px solid #E0E0E0;
@@ -63,7 +62,18 @@ input[type="radio"] + label {
 a:any-link {
     text-decoration:none;
 }
-
+/*
+select option {
+    background-color: white;
+    padding:11px 28px;
+    width:fit-content;
+    color:rgba(5, 5, 5, 0.7);
+    box-shadow:none;
+}
+select::content {
+    box-shadow:none;
+}
+*/
 
 /* Style the radio (both checked and unchecked) */
 input[type='radio']:after {
@@ -94,10 +104,16 @@ input[type='radio']:checked:after {
     visibility:visible;
     border-width:0;
 }
-
-
 input[type="file"] {
     border-style:dashed;
     padding:28px;
     background-color:rgba(2, 167, 90, 0.1);
+}
+::placeholder {
+    color:rgba(5, 5, 5, 0.7);
+}
+@media (min-width:768px) {
+    form {
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    }
 }

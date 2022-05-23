@@ -7,6 +7,7 @@
     <title>IESG</title>
     <link rel="stylesheet" href="../../css/bootstrap.css">
     <link rel="stylesheet" href="../../css/signup.css">
+    <link rel="stylesheet" href="../../css/custom-select.css">
 </head>
 <body>
     <main>
@@ -19,55 +20,62 @@
                             <div class="col-12">
                                 <label for="member-type" class="required">Preferred Membership Type</label>
                                 <br>
-                                <select name="member-type" id="member-type">
-                                    <option value="individual">Individual</option>
-                                    <option value="team">Team</option>
-                                    <option value="company">Company</option>
-                                </select>
+                                <div class="custom-select">
+                                    <select name="member-type" id="member-type">
+                                        <option value="individual">Individual</option>
+                                        <option value="individual">Individual</option>
+                                        <option value="company">Corperate</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                         <div class="row mb-4">
                             <div class="col-12">
                                 <label for="focus" class="required">Policy area of focus</label>
                                 <br>
-                                <select name="focus" id="focus">
-                                    <option value="agriculture">Agriculture</option>
-                                    <option value="information-tech">Information Technology</option>
-                                </select>
+                                <div class="custom-select">
+                                    <select name="focus" id="focus">
+                                        <option value="agriculture">Agriculture</option>
+                                        <option value="agriculture">Agriculture</option>
+                                        <option value="information-tech">Information Technology</option>
+                                        <option value="tourism">Tourism</option>
+                                        <option value="industry">Industry</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                         <div class="row mb-4">
                             <div class="col-12">
-                                <p>Memebership annual fee is N 250,000 only. Are you willing to be prompt with your payment?</p>
-                                <input type="radio" name="prompt-payment" id="yes-prompt-payment" value="yes" checked="yes">
-                                <label for="yes-prompt-payment" class="mb-3">Yes</label>
+                                <p style="margin-bottom:20px">Memebership annual fee is N 250,000 only. Are you willing to be prompt with your payment?</p>
+                                <input type="radio" name="prompt-payment" id="yes-prompt-payment" value="yes" checked="yes" style="margin-right:10px">
+                                <label for="yes-prompt-payment" style="margin-bottom:22px">Yes</label>
                                 <br>
-                                <input type="radio" name="prompt-payment" id="no-prompt-payment" value="no">
-                                <label for="no-prompt-payment" class="mb-3">No</label>
+                                <input type="radio" name="prompt-payment" id="no-prompt-payment" value="no" style="margin-right:10px">
+                                <label for="no-prompt-payment" style="margin-bottom:22px">No</label>
                             </div>
                         </div>
                         <div class="row mb-4">
                             <div class="col-12">
-                                <p>IESG meets regularly to discuss action points and plan interventions. Will you be available for IESG meetings?</p>
-                                <input type="radio" name="meetings" id="yes-meetings" value="yes" checked="yes">
-                                <label for="yes-meetings" class="mb-3">Yes</label>
+                                <p style="margin-bottom:20px">IESG meets regularly to discuss action points and plan interventions. Will you be available for IESG meetings?</p>
+                                <input type="radio" name="meetings" id="yes-meetings" value="yes" checked="yes" style="margin-right:10px">
+                                <label for="yes-meetings" style="margin-bottom:22px">Yes</label>
                                 <br>
-                                <input type="radio" name="meetings" id="no-meetings" value="no">
-                                <label for="no-meetings" class="mb-3">No</label>
+                                <input type="radio" name="meetings" id="no-meetings" value="no" style="margin-right:10px">
+                                <label for="no-meetings" style="margin-bottom:22px">No</label>
                             </div>
                         </div>
                         <div class="row mb-4">
                             <div class="col-12">
-                                <p>Are you willing to refer your friends and your network who share IESG ideals to join?</p>
-                                <input type="radio" name="referral" id="yes-referral" value="yes" checked="yes">
-                                <label for="yes-referral" class="mb-3">Yes</label>
+                                <p style="margin-bottom:20px">Are you willing to refer your friends and your network who share IESG ideals to join?</p>
+                                <input type="radio" name="referral" id="yes-referral" value="yes" checked="yes" style="margin-right:10px">
+                                <label for="yes-referral" style="margin-bottom:22px">Yes</label>
                                 <br>
-                                <input type="radio" name="referral" id="no-referral" value="no">
-                                <label for="no-referral" class="mb-3">No</label>
+                                <input type="radio" name="referral" id="no-referral" value="no" style="margin-right:10px">
+                                <label for="no-referral" style="margin-bottom:22px">No</label>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-12 mt-4">
                                 <a href="./signup1.html"><input type="button" value="Back"></a>
                                 <a href="./signup3.html"><input type="button" value="Next" class="float-end"></a>
                             </div>
@@ -77,5 +85,6 @@
             </div>
         </div>
     </main>
+    <script src="../../js/custom-select.js"></script>
 </body>
 </html>
