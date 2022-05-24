@@ -1,0 +1,40 @@
+input[type="file"] {
+    display:none;
+    position:relative;
+}
+
+.file-input  {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:218px;
+    max-height:fit-content;
+    background-color:rgba(2, 167, 90, 0.1);
+    border:1px dashed rgba(5, 5, 5, 0.25);
+    border-radius:4px;
+    padding:28px 0;
+    width:556px;
+    max-width: 100%;
+}
+.file-input > div {
+    padding:0 calc((180px / 1440px) * 100vw);
+}
+.file-input p {
+    text-align:center;
+    line-height:20px;
+    font-size:16px;
+}
+.darker {
+    color:rgba(5, 5, 5, 0.55);
+    font-weight:500;
+}
+.smaller {
+    color:rgba(5, 5, 5, 0.55);
+    font-weight:450;
+    font-size:12px;
+    line-height:15px;
+}
+.file-input button {
+    background-color:rgba(2, 167, 90, 0.15);
+    color:#02A75A;
+}
